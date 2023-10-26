@@ -11,7 +11,6 @@ public class MainScreenManager : MonoBehaviour
 
     private void Awake()
     {
-        
     }
 
     void Start()
@@ -32,11 +31,16 @@ public class MainScreenManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Ingame");
+        SceneManager.LoadScene("IngameLevel");
         Debug.Log("Prueba de press");
     }
 
-    public void ShowCredits()
+    public void ToggleOptions()
+    {
+        Debug.Log("Pantalla de opciones: ");
+    }
+
+    public void ToggleCredits() 
     {
         SwitchMenuPanelState();
         SwitchCreditsPanelState();

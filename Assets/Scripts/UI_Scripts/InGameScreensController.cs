@@ -8,9 +8,8 @@ public class InGameScreensController : MonoBehaviour
     [SerializeField] private GameObject pauseScreen;
     [SerializeField] private GameObject loseScreen;
     [SerializeField] private GameObject winScreen;
-    
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +27,16 @@ public class InGameScreensController : MonoBehaviour
         {
             PauseGame();
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             ShowWinScreen();
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             ShowLoseScreen();
         }
-        
     }
 
     public void PauseGame()
@@ -53,25 +53,32 @@ public class InGameScreensController : MonoBehaviour
         }
     }
 
-    public void ShowLoseScreen()
-    {
-        Time.timeScale = 0f;
-        loseScreen.SetActive(true);
-    }
-    public void ShowWinScreen()
-    {
-        Time.timeScale = 0f;
-        winScreen.SetActive(true);
-    }
-    
     public void PlayAgain()
     {
         SceneManager.LoadScene("InGame");
     }
-    
+
+    bool activa = false;
+
+    public void ToggleOptions()
+    {
+        Debug.Log("Pantalla de opciones: ");
+    }
+
     public void ExitGame()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void ShowWinScreen()
+    {
+        Time.timeScale = 0f;
+        winScreen.SetActive(true);
+    }
+
+    public void ShowLoseScreen()
+    {
+        Time.timeScale = 0f;
+        loseScreen.SetActive(true);
+    }
 }
