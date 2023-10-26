@@ -8,9 +8,9 @@ public class DamageController : MonoBehaviour
     [SerializeField] private int damage;
     [SerializeField] private Health _health;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
             Damage();
         }
