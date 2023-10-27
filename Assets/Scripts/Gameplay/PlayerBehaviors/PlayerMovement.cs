@@ -48,11 +48,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         input = Input.GetAxisRaw("Horizontal");
-        if (input < 0 && !facingRight)
+        if (input > 0 && facingRight)
         {
             Flip();
         }
-        else if (input > 0 && facingRight)
+        else if (input < 0 && !facingRight)
         {
             Flip();
         }
