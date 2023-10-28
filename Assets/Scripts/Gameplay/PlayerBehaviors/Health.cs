@@ -1,10 +1,34 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     public int health;
-	
+    [SerializeField] private Image[] hearts;
+
+    private void Start()
+    {
+        UpdateHealth();
+    }
+
+    public void UpdateHealth()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < health)
+            {
+                hearts[i].color = Color.white;
+            }
+            else
+            {
+                hearts[i].color = Color.gray;
+            }
+        }
+    }
+    
+
     public void TakeDamage(int damage)
     {
         health -= damage;

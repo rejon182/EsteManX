@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7452334141548004143}
   - component: {fileID: 9167709862172156893}
   - component: {fileID: 965406078064312398}
+  - component: {fileID: 7449068533227320914}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,3 +119,17 @@ MonoBehaviour:
   damage: 1
   liveTime: 5
   direccion: {x: 1, y: 0}
+--- !u!114 &7449068533227320914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202450554760211620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d30985d3dbe524a9f83fdd0e799ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  _health: {fileID: 0}
