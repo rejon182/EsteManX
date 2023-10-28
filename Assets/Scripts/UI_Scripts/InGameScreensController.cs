@@ -58,8 +58,6 @@ public class InGameScreensController : MonoBehaviour
         SceneManager.LoadScene("InGame");
     }
 
-    bool activa = false;
-
     public void ToggleOptions()
     {
         Debug.Log("Pantalla de opciones: ");
