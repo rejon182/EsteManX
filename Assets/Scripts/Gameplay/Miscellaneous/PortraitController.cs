@@ -1,18 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class PortraitController : MonoBehaviour
 {
     public int activatedCandle = 0;
     public int requiredCandles = 3; // Adjust as needed
     public GameObject portrait;
-    [SerializeField] private GameObject[] Candles;
+    private SpriteRenderer portraitSprite;
+    
 
+    private void Start()
+    {
+        portrait.SetActive(false);
+
+    }
 
     private void Update()
     {
         CheckPortraitState();
+        
     }
 
     public void CheckPortraitState()
@@ -20,6 +29,18 @@ public class PortraitController : MonoBehaviour
         if (activatedCandle >= requiredCandles)
         {
             portrait.SetActive(true);
+            portraitSprite = GetComponent<SpriteRenderer>();
         }
+    }
+
+    public void ActivatePortrait()
+    {
+        portrait.SetActive(true);
+    }
+    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log("Mostrando al niño");
+        portraitSprite.color = Color.green;
     }
 }
