@@ -26,7 +26,10 @@ public class DamageController : MonoBehaviour
 
     public void Damage()
     {
-        _health.health -= damage;
-        _health.UpdateHealth();
+        if (_health.health>=0)
+        {
+            _health.health -= damage;
+            _health.UpdateHealth();
+        }
     }
 }
