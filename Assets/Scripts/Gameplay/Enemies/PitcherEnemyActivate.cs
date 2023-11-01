@@ -52,7 +52,7 @@ public class PitcherEnemyActivate : MonoBehaviour
     {
         isAttack = true;
         yield return new WaitForSeconds(aimingTime);
-        // anim.SetTrigger("isShoot");
+        anim.SetTrigger("Bones_IsThrowing");
         Shoot();
         yield return new WaitForSeconds(shootingTime);
         isAttack = false;

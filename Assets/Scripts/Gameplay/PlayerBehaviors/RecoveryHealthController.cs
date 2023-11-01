@@ -7,11 +7,7 @@ public class RecoveryHealthController : MonoBehaviour
 {
     [SerializeField] private int healthRecover;
     [SerializeField] private Health _health;
-
-    private void Start()
-    {
-    }
-
+    
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("HealthItem") && _health.health < 3)
