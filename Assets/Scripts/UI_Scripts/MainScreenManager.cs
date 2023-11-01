@@ -11,11 +11,11 @@ public class MainScreenManager : MonoBehaviour
 
     private void Awake()
     {
+        AudioManager.Instance.PlayMusic("menu");
     }
 
     void Start()
     {
-        AudioManager.instance.PlayMusic("MainMenu");
         panelMenu.SetActive(true);
         panelCredits.SetActive(false);
     }
