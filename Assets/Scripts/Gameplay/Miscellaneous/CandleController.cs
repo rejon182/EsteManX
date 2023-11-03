@@ -25,6 +25,7 @@ public class CandleController : MonoBehaviour
         {
             portrait.activatedCandle++;
             portrait.CheckPortraitState();
+            AudioManager.Instance.PlaySFX("sfx_candle");
             isActive = true;
             // portrait.ActivatePortrait();
         }

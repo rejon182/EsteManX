@@ -17,7 +17,7 @@ public class PortraitController : MonoBehaviour
 
     private void Update()
     {
-        CheckPortraitState();
+        // CheckPortraitState();
         
     }
 
@@ -38,6 +38,9 @@ public class PortraitController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log("Mostrando al niño");
-        portraitSprite.color = Color.green;
+        // portraitSprite.color = Color.green;
+        CheckPortraitState();
+        col.gameObject.SetActive(false);
+
     }
 }

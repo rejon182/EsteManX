@@ -171,13 +171,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2291647253549309686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a885b6cd7b6dc347be2cc0ba7f8af3d, type: 3}
+  m_Script: {fileID: 11500000, guid: a2edc44503c26344b98342e5abc83ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   musicSounds: []
   sfxSounds: []
-  musicSource: {fileID: 0}
-  sfxSource: {fileID: 0}
+  musicSource: {fileID: 4243385217381557354}
+  sfxSource: {fileID: 4035120161711046330}
 --- !u!1 &2606098212910740952
 GameObject:
   m_ObjectHideFlags: 0
