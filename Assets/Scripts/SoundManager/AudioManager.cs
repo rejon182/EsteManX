@@ -87,8 +87,8 @@ public class AudioManager : MonoBehaviour
         sfxSource.volume = volume;
     }
 
-
-    /*
+    #region  Brackey Solution
+/*
     // Brackey Solution
      public Sound[] sounds;
 
@@ -135,4 +135,8 @@ public class AudioManager : MonoBehaviour
 
         s.source.Play();
     }*/
+    
+
+    #endregion
+    
 }

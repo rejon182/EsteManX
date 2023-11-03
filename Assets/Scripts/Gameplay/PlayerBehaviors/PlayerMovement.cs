@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        AudioManager.Instance.PlayMusic("mu_level1");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -74,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isJump = true;
                 dobleJump = false;
-                anim.SetTrigger("isDoble");
+                // anim.SetTrigger("isDoble");
             }
         }
 
@@ -101,6 +102,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(input * speed, rb.velocity.y);
         if (isJump)
         {
+            AudioManager.Instance.PlaySFX("sfx_jump");
             rb.velocity = Vector2.up * jumpForce;
             isJump = false;
         }
