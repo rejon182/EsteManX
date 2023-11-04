@@ -7,6 +7,7 @@ public class DamageController : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private Health _health;
+    public InGameScreensController inGameScreensController;
 
     private void Start()
     {
@@ -26,10 +27,15 @@ public class DamageController : MonoBehaviour
 
     public void Damage()
     {
-        if (_health.health>=0)
+        Debug.Log("===>" + _health.health);
+        if (_health.health > 0)
         {
             _health.health -= damage;
             _health.UpdateHealth();
+            if (_health.health <= 0)
+            {
+                inGameScreensController.ShowLoseScreen();
+            }
         }
     }
 }
