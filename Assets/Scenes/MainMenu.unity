@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5744493899422514734}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainScreenManager, Assembly-CSharp
         m_MethodName: ToggleCredits
         m_Mode: 1
@@ -3480,6 +3480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelMenu: {fileID: 2857880154704834229}
   panelCredits: {fileID: 2857880154202755140}
+  panelOptions: {fileID: 7725271498641103309}
 --- !u!222 &4732446194380373125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3617,7 +3618,7 @@ GameObject:
   - component: {fileID: 4789738648365910519}
   - component: {fileID: 6147569279133304245}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Btn_BackToMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3667,6 +3668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelMenu: {fileID: 2857880154704834229}
   panelCredits: {fileID: 2857880154202755140}
+  panelOptions: {fileID: 7725271498641103309}
 --- !u!222 &5869782936316316748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3738,7 +3740,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4789738648365910519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4567437344949659636}
+        m_TargetAssemblyTypeName: MainScreenManager, Assembly-CSharp
+        m_MethodName: ToggleOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6427798176597235321
 MonoBehaviour:
   m_ObjectHideFlags: 0
