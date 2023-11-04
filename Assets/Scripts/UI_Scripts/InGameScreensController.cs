@@ -55,7 +55,7 @@ public class InGameScreensController : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("InGame");
+        SceneManager.LoadScene("InGameLevel");
     }
 
     public void ToggleOptions()
