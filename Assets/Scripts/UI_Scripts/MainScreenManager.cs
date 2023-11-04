@@ -31,8 +31,14 @@ public class MainScreenManager : MonoBehaviour
 
     public void StartGame()
     {
+        // Debug.Log("Prueba de press");
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void StartLevel()
+    {
         SceneManager.LoadScene("IngameLevel");
-        Debug.Log("Prueba de press");
+
     }
 
     public void ToggleOptions()
