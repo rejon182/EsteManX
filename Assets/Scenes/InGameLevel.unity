@@ -349,7 +349,7 @@ Animator:
   m_GameObject: {fileID: 73698327}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9487,7 +9487,7 @@ Animator:
   m_GameObject: {fileID: 313468079}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12150,6 +12150,7 @@ MonoBehaviour:
   activatedCandle: 0
   requiredCandles: 3
   portrait: {fileID: 853811639}
+  inGameScreensController: {fileID: 0}
 --- !u!212 &853811641
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12302,7 +12303,7 @@ Animator:
   m_GameObject: {fileID: 910242160}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12610,7 +12611,7 @@ Animator:
   m_GameObject: {fileID: 980151328}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12972,7 +12973,7 @@ Animator:
   m_GameObject: {fileID: 1211547266}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14533,7 +14534,7 @@ Animator:
   m_GameObject: {fileID: 1752970450}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22490,7 +22491,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1007650992, guid: 3cc3fa4bafc3632419f142e5b29fe510, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22558,6 +22559,7 @@ MonoBehaviour:
   activatedCandle: 0
   requiredCandles: 8
   portrait: {fileID: 2092360819}
+  inGameScreensController: {fileID: 570712988}
 --- !u!1 &2099005436
 GameObject:
   m_ObjectHideFlags: 0
@@ -22617,7 +22619,7 @@ Animator:
   m_GameObject: {fileID: 2099005436}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22798,7 +22800,7 @@ Animator:
   m_GameObject: {fileID: 2137196959}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e943785599ec17c43b0752a3a717afaa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
