@@ -8,6 +8,7 @@ public class MainScreenManager : MonoBehaviour
 {
     [SerializeField] private GameObject panelMenu;
     [SerializeField] private GameObject panelCredits;
+    [SerializeField] private GameObject panelOptions;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class MainScreenManager : MonoBehaviour
     {
         panelMenu.SetActive(true);
         panelCredits.SetActive(false);
+        panelOptions.SetActive(false);
     }
 
     #region Update
@@ -31,13 +33,21 @@ public class MainScreenManager : MonoBehaviour
 
     public void StartGame()
     {
+        // Debug.Log("Prueba de press");
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void StartLevel()
+    {
         SceneManager.LoadScene("IngameLevel");
-        Debug.Log("Prueba de press");
+
     }
 
     public void ToggleOptions()
     {
         Debug.Log("Pantalla de opciones: ");
+        SwitchMenuPanelState();
+        SwitchOptionsPanelState();
     }
 
     public void ToggleCredits() 
@@ -74,6 +84,18 @@ public class MainScreenManager : MonoBehaviour
         else
         {
             panelCredits.SetActive(true);
+        }
+    }
+    
+    private void SwitchOptionsPanelState()
+    {
+        if (panelOptions.activeInHierarchy)
+        {
+            panelOptions.SetActive(false);
+        }
+        else
+        {
+            panelOptions.SetActive(true);
         }
     }
 }
